@@ -1,0 +1,79 @@
+{% set name = "Interopability" %}
+{% set logo = "Interopability" %}
+{% set title = "Interoperability" %}
+{% set shortform = "Interop" %}
+{% set scope = "Community collaboration and project management on Interoperability.
+Develop and publish definitions of success with respect to business interoperability, at the highest level.
+Defining points of protocol-defined touchpoints for maximum interchangeability of components at every layer; it is assumed that over time, that number will increase, not decrease.
+Community collaboration and project management on interoperability goal to seek the greatest interoperability in the greater good, not to pick winners. 
+Provide feedback, input documents, members, and guidance to working groups producing  standards, specifications, 
+reference implementations and demonstrations hosted by community organizations including but not limited to IETF, W3C, W3C CCG, Hyperledger, Trust over IP." %}
+{% set charters = {
+  "Interoperability documentation": {
+    links: [
+      {
+        text: "Interop Charter - This is not an IPR protected group.",
+        href: "https://docs.google.com/document/d/1a01GQVtZB7tDVcm9avS8zuYPHQzEEDtTOEh4Bqu-8Bs/edit"
+      },
+      {
+        text: "Agenda/GitHub",
+        href: "https://github.com/decentralized-identity/interoperability/blob/master/agenda.md"
+      },
+      {
+        text: "Mailing list",
+        href: "https://dif.groups.io/g/interop-wg/"
+      },
+      {
+        text: "Calendar entry - week A",
+        href: "https://calendar.google.com/event?action=TEMPLATE&tmeid=bWc1YWRiaGZlYjZqMDRwb3NvdXM3a2YzcTBfMjAyMTEwMjBUMjEwMDAwWiBkZWNlbnRyYWxpemVkLmlkZW50aXR5QG0&tmsrc=decentralized.identity%40gmail.com&scp=ALL"
+      },
+      {
+        text: "Calendar entry - week B",
+        href: "https://calendar.google.com/event?action=TEMPLATE&tmeid=b2Nuc2NjdWwzamVjcmJtNzR1M3NubnVucWRfMjAyMTEwMjdUMTMwMDAwWiBkZWNlbnRyYWxpemVkLmlkZW50aXR5QG0&tmsrc=decentralized.identity%40gmail.com&scp=ALL"
+      },
+      {
+        text: "WG Meeting Recordings",
+        href: "https://docs.google.com/spreadsheets/d/1wgccmMvIImx30qVE9GhRKWWv3vmL2ZyUauuKx3IfRmA/edit#gid=1343983492"
+      }
+    ]
+  }
+}
+%}
+{% set repoTag = "interop-wg" %}
+{% set projects = {
+    "GitHub": {
+      links: [
+        {
+          text: "Interoperability repo",
+          href: "https://github.com/decentralized-identity/interoperability"
+        }
+      ]
+    }
+  }
+%}
+
+{%
+  set chairs = {
+    "Kaliya Young ": {
+      title: "Identitywoman",
+      photo: "/images/photos/kaliya-young.jpg",
+      linkedin: "kaliya",
+      twitter: "IdentityWoman"
+    },
+    "David Waite ": {
+      title: "Principal Architect @ Pingidentity",
+      photo: "/images/photos/david_waite.jpg",
+      linkedin: "davidwaite",
+      twitter: "dwaite"
+    },
+    "Snorre Lothar von Gohren Edwin": {
+      title: "CTO @ Diwala",
+      photo: "/images/photos/snorre_lothar.png",
+      linkedin: "vongohren",
+      twitter: "vongohren"
+    }
+  }
+%}
+
+
+{% extends "og.html.njk" %}

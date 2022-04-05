@@ -1,0 +1,84 @@
+{% set css = ['directory', 'jobs'] %}
+{% set js = ['jsonp', 'jobs'] %}
+
+{% extends "default.html.njk" %}
+
+{% block content %}
+  <section class="page-title theme-bg">
+    <div class="container">
+      <svg><use xlink:href="images/icons.svg#briefcase"></use></svg>
+      <h1>Job Opportunities</h1>
+    </div>
+  </section>
+
+  <section id="item_filter" class="gray-bg">
+    <div class="row justify-content-center p-15px-rl p-20px-tb">
+      <div class="form-group">
+        <div id="filter_search" class="filter-search">
+          <input id="filter_search_input" class="form-control" type="text" placeholder="Search jobs by name, date, and location">
+          <a href="/jobs" id="filter_clear"><svg><use xlink:href="images/icons.svg#close_x"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-9">
+          <ul id="item_list" styled>
+            <!--------------------------->
+            <!-- Start of Job Listings -->
+            <!--------------------------->
+            <li data-filter="${searchStrings}">
+              <div class="item-list-left">
+                <a href="https://boards.greenhouse.io/centre/jobs/4996318003" target="_blank">
+                  <img src="/images/job-logos/centre-io.png"/>
+                </a>
+              </div>
+              <dl class="item-list-center">
+                <dt><a href="https://boards.greenhouse.io/centre/jobs/4996318003" target="_blank">Blockchain Engineer / Architect</a></dt>
+                <dd class="item-location"><strong>Location:</strong> Remote (US EST-centric)</dd>
+                <dd>Centre is looking for a smart-contract whisperer, blockchain hackathon junkie, and/or verifiable credential wizard to combine research, testing, and architecture for both identity-related (Verite) and token-design (USDC) projects.
+                </dd>
+              </dl>
+            </li>
+            <li data-filter="${searchStrings}">
+              <div class="item-list-left">
+                <a href="https://www.notion.so/trinsic/Developer-Advocate-5f7ecf9f01484e69ad37ce06d8b9645a" target="_blank">
+                  <img src="/images/job-logos/trinsic.png"/>
+                </a>
+              </div>
+              <dl class="item-list-center">
+                <dt><a href="https://www.notion.so/trinsic/Developer-Advocate-5f7ecf9f01484e69ad37ce06d8b9645a" target="_blank">Developer Advocate</a></dt>
+                <dd class="item-location"><strong>Location:</strong> Remote</dd>
+                <dd>As a Developer Advocate, you'll :</dd>
+                <dd> - Become extremely knowledgeable about an emerging and rapidly growing technology <a href="https://trinsic.id/what-is-self-sovereign-identity/" target="_blank">self-sovereign identity</a> by understanding, communicating, and documenting best practices</dd>
+                <dd> - Ensure developers always get the help they need by providing brilliant documentation, thoughtful technical support, and fostering the Trinsic community through the developer forum and Slack</dd>
+                <dd> - Make developers' lives easier by building and improving documentation, demos, sample applications, scripts, integrations, etc </dd>
+                <dd> - Ensure our product reflects the needs of the developers in our community by collecting feedback, logging bugs, and contributing to the product yourself</dd>
+                <dd>- Maintain Trinsic's position as the go-to developer platform for decentralized identity by developing relationships with developers around the world and work with marketing to help developers tell their stories through technical content</dd>
+              </dl>
+            </li>
+            <li data-filter="${searchStrings}">
+              <div class="item-list-left">
+                <a href="https://www.notion.so/trinsic/Backend-Engineer-720c06090e654036b31a8bc7409028d3" target="_blank">
+                  <img src="/images/job-logos/trinsic.png"/>
+                </a>
+              </div>
+              <dl class="item-list-center">
+            <dt><a href="https://www.notion.so/trinsic/Backend-Engineer-720c06090e654036b31a8bc7409028d3" target="_blank">Backend Engineer</a></dt>
+                <dd class="item-location"><strong>Location:</strong> Remote</dd>
+                <dd>You join us in developing the open source libraries, standards, and drivers our platform needs. We try to hire people who will do the work of their lives at Trinsic. That person is likely: </dd>
+                <dd> - A well-rounded engineer who is particularly strong in backend and cloud architectures. Rust is our language of choice for native development, and Go, .NET, and Node in microservices setup. Kubernetes native development and Protobuf across the board</dd>
+                <dd> - Has experience building customer-facing APIs or experience building systems implemented on top of well defined standards & protocols like gRPC, REST, OIDC/OAuth</dd>
+                <dd> - An exceptional communicator who is excited to work on a remote team</dd>
+                <dd> - Someone who identifies with the core values and philosophy of self-sovereign identity, namely privacy, autonomy, and individual dignity</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
